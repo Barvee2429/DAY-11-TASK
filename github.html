@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f8fa;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #24292e;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            border: 4px solid #ffffff;
+        }
+        .header h1 {
+            margin: 10px 0 5px;
+        }
+        .header p {
+            margin: 0;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .profile-info {
+            width: 30%;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .repositories {
+            width: 65%;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .repositories h2, .activity h2 {
+            border-bottom: 2px solid #24292e;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .repo-item, .activity-item {
+            margin-bottom: 20px;
+        }
+        .repo-item h3, .activity-item h3 {
+            margin: 0;
+            color: #0366d6;
+        }
+        .repo-item p, .activity-item p {
+            margin: 5px 0;
+            color: #586069;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #24292e;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <img src="https://via.placeholder.com/120" alt="Profile Picture">
+            <h1>John Doe</h1>
+            <p>@johndoe</p>
+            <p>Web Developer | Open Source Enthusiast</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <aside class="profile-info">
+                <h2>Profile</h2>
+                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Website:</strong> <a href="https://example.com" target="_blank">example.com</a></p>
+                <p><strong>Bio:</strong> Passionate developer with experience in web technologies and open source projects.</p>
+            </aside>
+
+            <section class="repositories">
+                <h2>Repositories</h2>
+                <div class="repo-item">
+                    <h3><a href="#">Project One</a></h3>
+                    <p>A brief description of the first project.</p>
+                </div>
+                <div class="repo-item">
+                    <h3><a href="#">Project Two</a></h3>
+                    <p>A brief description of the second project.</p>
+                </div>
+                <!-- Add more repository items as needed -->
+            </section>
+        </div>
+
+        <section class="activity">
+            <h2>Recent Activity</h2>
+            <div class="activity-item">
+                <h3>Committed to <a href="#">Project One</a></h3>
+                <p>Added a new feature to improve user experience.</p>
+            </div>
+            <div class="activity-item">
+                <h3>Opened a new issue in <a href="#">Project Two</a></h3>
+                <p>Bug report related to authentication.</p>
+            </div>
+            <!-- Add more activity items as needed -->
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 John Doe</p>
+    </footer>
+
+</body>
+</html>
